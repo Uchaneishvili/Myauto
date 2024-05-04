@@ -1,4 +1,11 @@
-import { GeoFlag, MyAutoIcon } from "../ui/icon/Icon";
+import {
+	GearIcon,
+	GeoFlag,
+	LariIcon,
+	MotorIcon,
+	SpeedIcon,
+	WheelIcon,
+} from "../ui/icon/Icon";
 
 export default function Card() {
 	return (
@@ -26,30 +33,117 @@ export default function Card() {
 				<div
 					style={{
 						width: `calc(100% - 210px)`,
-						display: "flex",
-						justifyContent: "space-between",
 					}}
 				>
-					<div style={{ fontSize: "14px", color: "#272A37" }}>
-						LAND ROVER Range Rover Evoque{" "}
-						<span style={{ color: "#8C929B" }}>2022 წ</span>
+					<div
+						style={{
+							display: "flex",
+							justifyContent: "space-between",
+						}}
+					>
+						<div style={{ fontSize: "14px", color: "#272A37" }}>
+							LAND ROVER Range Rover Evoque{" "}
+							<span style={{ color: "#8C929B" }}>2022 წ</span>
+						</div>
+						<div style={{ display: "flex", gap: "17px" }}>
+							<div style={{ fontSize: "11px", color: "#26B753" }}>
+								განბაჟებული
+							</div>
+							<div
+								style={{
+									color: "#6F7383",
+									display: "flex",
+									gap: 8,
+									fontSize: "12px",
+								}}
+							>
+								<span>
+									<GeoFlag />
+								</span>
+								გზაშია
+							</div>
+						</div>
 					</div>
-					<div style={{ display: "flex", gap: "17px" }}>
-						<div style={{ fontSize: "11px", color: "#26B753" }}>
-							განბაჟებული
+
+					<div style={{ display: "flex", justifyContent: "space-between" }}>
+						<div
+							style={{
+								paddingTop: "20px",
+								paddingBottom: "20px",
+								display: "grid",
+								gridTemplateColumns: "repeat(3, 1fr) ",
+								gridTemplateRows: "repeat(3, 1fr)",
+							}}
+						>
+							<div
+								style={{
+									gridArea: "1 / 1 / 2 / 2",
+									fontSize: "12px",
+									display: "flex",
+									gap: 12,
+								}}
+							>
+								<span>
+									<MotorIcon />
+								</span>
+								1.8 დატ. ჰიბრიდი
+							</div>
+							<div
+								style={{
+									gridArea: "1 / 3 / 2 / 4",
+									fontSize: "12px",
+									display: "flex",
+									gap: 12,
+								}}
+							>
+								<span>
+									<GearIcon />
+								</span>
+								1.8 დატ. ჰიბრიდი
+							</div>
+							<div
+								style={{
+									gridArea: "3 / 1 / 4 / 2",
+									fontSize: "12px",
+									display: "flex",
+									gap: 12,
+								}}
+							>
+								<span>
+									<SpeedIcon />
+								</span>
+								1.8 დატ. ჰიბრიდი
+							</div>
+							<div
+								style={{
+									gridArea: "3 / 3 / 4 / 4",
+									fontSize: "12px",
+									display: "flex",
+									gap: 12,
+								}}
+							>
+								<span>
+									<WheelIcon />
+								</span>
+								1.8 დატ. ჰიბრიდი
+							</div>
 						</div>
 						<div
 							style={{
-								color: "#6F7383",
 								display: "flex",
-								gap: 8,
-								fontSize: "12px",
+								gap: 4,
+								marginTop: "20px",
+								marginBottom: "20px",
+								fontSize: "20px",
+								color: "#272A37",
+								height: "24px",
+								alignItems: "center",
 							}}
 						>
+							69,507
 							<span>
-								<GeoFlag />
+								<LariIcon />
 							</span>
-							გზაშია
 						</div>
 					</div>
 				</div>

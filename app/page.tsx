@@ -20,7 +20,7 @@ export default function Home() {
 						}}
 					>
 						<div>176047 განცხადება</div>
-						<div style={{ display: "flex" }}>
+						<div style={{ display: "flex", gap: 8 }}>
 							<Select
 								placeholder="ბოლო 3 საათი"
 								width={140}
@@ -33,6 +33,10 @@ export default function Home() {
 							/>
 						</div>
 					</div>
+					<Card />
+					<Card />
+					<Card />
+					<Card />
 					<Card />
 				</div>
 			</div>

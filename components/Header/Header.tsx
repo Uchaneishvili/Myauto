@@ -2,7 +2,9 @@ import { MyAutoIcon } from "../ui/icon/Icon";
 
 export default function Header() {
 	return (
-		<div style={{ height: "80px", backgroundColor: "#ffffff", width: "100%" }}>
+		<header
+			style={{ height: "80px", backgroundColor: "#ffffff", width: "100%" }}
+		>
 			<div
 				style={{
 					width: "1050px",
@@ -15,6 +17,6 @@ export default function Header() {
 			>
 				<MyAutoIcon />
 			</div>
-		</div>
+		</header>
 	);
 }
