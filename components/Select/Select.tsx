@@ -25,7 +25,7 @@ export default function Select(props: SelectorProps) {
 				</label>
 			)}
 			<div className="mt-[-1px] relative">
-				<div className="relative w-full px-[16px] rounded-[8px] md:border transition-all cursor-pointer border-raisin-10 md:hover:border-raisin-100">
+				<div className=" bg-white relative w-full px-[16px] rounded-[8px] md:border transition-all cursor-pointer border-raisin-10 md:hover:border-raisin-100">
 					<div className="w-full h-[38px] md:border-none   md:border-t border-b border-raisin-10">
 						<span className="absolute xl:left-[16px] inline-block overflow-hidden text-ellipsis whitespace-nowrap w-[calc(100%-60px)] -translate-y-1/2 transition-all  left-[16px] text-[12px] md:text-[12px] xl:text-[12px] top-1/2 text-raisin-100">
 							{props.placeholder}

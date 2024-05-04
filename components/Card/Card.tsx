@@ -3,6 +3,7 @@ import {
 	GeoFlag,
 	LariIcon,
 	MotorIcon,
+	Oval,
 	SpeedIcon,
 	WheelIcon,
 } from "../ui/icon/Icon";
@@ -10,7 +11,7 @@ import {
 export default function Card() {
 	return (
 		<div
-			className="h-172 bg-white w-780 rounded-14"
+			className="h-172 bg-white w-[750px] rounded-14 xl:w-780"
 			style={{ marginTop: "10px", marginBottom: "10px" }}
 		>
 			<div
@@ -41,7 +42,9 @@ export default function Card() {
 							justifyContent: "space-between",
 						}}
 					>
-						<div style={{ fontSize: "14px", color: "#272A37" }}>
+						<div
+							style={{ fontSize: "14px", color: "#272A37", fontWeight: 600 }}
+						>
 							LAND ROVER Range Rover Evoque{" "}
 							<span style={{ color: "#8C929B" }}>2022 წ</span>
 						</div>
@@ -73,6 +76,7 @@ export default function Card() {
 								display: "grid",
 								gridTemplateColumns: "repeat(3, 1fr) ",
 								gridTemplateRows: "repeat(3, 1fr)",
+								color: "#1B1D25",
 							}}
 						>
 							<div
@@ -97,9 +101,9 @@ export default function Card() {
 								}}
 							>
 								<span>
-									<GearIcon />
+									<SpeedIcon />
 								</span>
-								1.8 დატ. ჰიბრიდი
+								200 000 კმ
 							</div>
 							<div
 								style={{
@@ -110,9 +114,9 @@ export default function Card() {
 								}}
 							>
 								<span>
-									<SpeedIcon />
+									<GearIcon />
 								</span>
-								1.8 დატ. ჰიბრიდი
+								ავტომატიკა
 							</div>
 							<div
 								style={{
@@ -125,7 +129,7 @@ export default function Card() {
 								<span>
 									<WheelIcon />
 								</span>
-								1.8 დატ. ჰიბრიდი
+								მარჯვენა
 							</div>
 						</div>
 						<div
@@ -145,6 +149,18 @@ export default function Card() {
 								<LariIcon />
 							</span>
 						</div>
+					</div>
+
+					<div
+						style={{
+							display: "flex",
+							alignItems: "center",
+							gap: 4,
+							fontSize: "12px",
+							color: "#6F7383",
+						}}
+					>
+						589 ნახვა <Oval /> 2 დღის წინ
 					</div>
 				</div>
 			</div>

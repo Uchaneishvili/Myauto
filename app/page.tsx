@@ -21,16 +21,8 @@ export default function Home() {
 					>
 						<div>176047 განცხადება</div>
 						<div style={{ display: "flex", gap: 8 }}>
-							<Select
-								placeholder="ბოლო 3 საათი"
-								width={140}
-								backgroundColor={"#ffffff"}
-							/>
-							<Select
-								placeholder="თარიღი კლებადი"
-								width={164}
-								backgroundColor={"#ffffff"}
-							/>
+							<Select placeholder="ბოლო 3 საათი" width={140} />
+							<Select placeholder="თარიღი კლებადი" width={164} />
 						</div>
 					</div>
 					<Card />

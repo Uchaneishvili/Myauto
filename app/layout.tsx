@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Header/Header";
-
-const inter = Inter({ subsets: ["latin"] });
+import "../public/fonts/stylesheet.css";
 
 export const metadata: Metadata = {
 	title: "Create Next App",
@@ -17,25 +15,15 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
-			<body className={inter.className}>
+			<body>
 				<Header />
 
-				<div
-					style={{
-						width: "100%",
-						height: "100%",
-						backgroundColor: "#F2F3F6",
-					}}
-				>
-					<div
-						style={{
-							width: "1050px",
-							marginLeft: "auto",
-							marginRight: "auto",
-						}}
-					>
-						<div style={{ height: "40px" }}>მთავარი</div>
-						{children}
+				<div className="w-full h-full bg-[#F2F3F6]">
+					<div className="max-w-full mx-auto w-[1050px] flex flex-col">
+						<div className="flex items-start px-4 lg:h-10">მთავარი</div>
+						<div className="max-w-full mx-auto w-[1050px] flex flex-col items-center">
+							<div className="text-center">{children}</div>
+						</div>
 					</div>
 				</div>
 			</body>

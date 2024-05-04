@@ -305,3 +305,31 @@ export const LariIcon = () => {
 		</svg>
 	);
 };
+
+export const Oval = () => {
+	return (
+		<svg
+			width="3"
+			height="4"
+			viewBox="0 0 3 4"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<circle cx="1.5" cy="2" r="1.5" fill="#8C929B" />
+		</svg>
+	);
+};
+
+export const Divider = () => {
+	return (
+		<svg
+			width="250"
+			height="1"
+			viewBox="0 0 250 1"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<rect width="250" height="1" fill="#E9E9F0" />
+		</svg>
+	);
+};

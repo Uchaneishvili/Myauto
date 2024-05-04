@@ -1,9 +1,9 @@
 import Select from "../Select/Select";
-import { CarIcon, MotoIcon, TractorIcon } from "../ui/icon/Icon";
+import { CarIcon, Divider, MotoIcon, TractorIcon } from "../ui/icon/Icon";
 
 export default function Filter() {
 	return (
-		<div style={{ width: "250px", height: "520px" }}>
+		<div className="hidden lg:block w-64 h-[520px]">
 			<div
 				style={{
 					height: "48px",
@@ -53,21 +53,17 @@ export default function Filter() {
 			>
 				<div
 					style={{
-						paddingTop: "22px",
-						paddingLeft: "24px",
-						paddingRight: "24px",
+						padding: "22px",
+						rowGap: "20px",
+						display: "grid",
 					}}
 				>
-					<div style={{ paddingTop: "10px", paddingBottom: "10px" }}>
-						<Select placeholder="იყიდება" label="გარიგების ტიპი" />
-					</div>
-					<div style={{ paddingTop: "10px", paddingBottom: "10px" }}>
-						<Select placeholder="იყიდება" label="გარიგების ტიპი" />
-					</div>
-					<div style={{ paddingTop: "10px", paddingBottom: "10px" }}>
-						<Select placeholder="იყიდება" label="გარიგების ტიპი" />
-					</div>
+					<Select placeholder="იყიდება" label="გარიგების ტიპი" />
+					<Select placeholder="იყიდება" label="გარიგების ტიპი" />
+					<Select placeholder="იყიდება" label="გარიგების ტიპი" />
 				</div>
+
+				<Divider />
 			</div>
 		</div>
 	);
