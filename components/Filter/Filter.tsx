@@ -55,7 +55,7 @@ export default function Filter() {
 				<div
 					className="bg-white w-full flex flex-col justify-between"
 					style={{
-						height: "calc(100% - 48px)",
+						height: "100%",
 						border: "1px solid #E9E9F0",
 						borderBottom: 0,
 					}}
