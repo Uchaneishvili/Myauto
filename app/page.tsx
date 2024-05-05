@@ -8,7 +8,8 @@ export default function Home() {
 			<div className="block lg:flex">
 				<Filter />
 
-				<div style={{ paddingLeft: "20px", paddingRight: "20px" }}>
+				<div className="lg:px-5">
+					{/* <div style={{ paddingLeft: "20px", paddingRight: "20px" }}> */}
 					<div className="hidden lg:flex justify-between">
 						<div>176047 განცხადება</div>
 						<div style={{ display: "flex", gap: 8 }}>

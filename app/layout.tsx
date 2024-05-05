@@ -20,8 +20,8 @@ export default function RootLayout({
 				<Header />
 
 				<div className="w-full h-full bg-[#F2F3F6]">
-					<div className="max-w-full mx-auto w-[1050px] flex flex-col">
-						<div className="hidden lg:flex items-start mt-8 mb-5 text-sm gap-1 items-center text-custom-gray px-4  lg:px-0 ">
+					<div className="max-w-full mx-auto w-full flex flex-col">
+						<div className="hidden  lg:flex mx-auto w-[1050px] max-w-full items-start mt-8 mb-5 text-sm gap-1 items-center text-custom-gray px-4  lg:px-0 ">
 							მთავარი <BreadCrumbsArrowIcon /> ძიება <BreadCrumbsArrowIcon />{" "}
 							<span className="text-custom-orange">იყიდება</span>
 						</div>

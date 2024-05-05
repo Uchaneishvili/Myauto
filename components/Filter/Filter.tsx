@@ -69,7 +69,67 @@ export default function Filter() {
 				</div>
 			</div>
 
-			<div className="flex gap-2 px-4 py-3 lg:hidden ">
+			<div className="flex gap-2 py-3 max-w-[415px] overflow-scroll lg:hidden md:max-w-[750px]">
+				<div
+					style={{
+						borderRadius: "100px",
+						backgroundColor: "#ffffff",
+						height: "32px",
+						padding: "12px",
+						display: "flex",
+						alignItems: "center",
+						width: "min-content",
+						fontSize: "12px",
+						color: "#454857",
+					}}
+				>
+					განბაჟება
+				</div>
+				<div
+					style={{
+						borderRadius: "100px",
+						backgroundColor: "#ffffff",
+						height: "32px",
+						padding: "12px",
+						display: "flex",
+						alignItems: "center",
+						width: "min-content",
+						fontSize: "12px",
+						color: "#454857",
+					}}
+				>
+					განბაჟება
+				</div>
+				<div
+					style={{
+						borderRadius: "100px",
+						backgroundColor: "#ffffff",
+						height: "32px",
+						padding: "12px",
+						display: "flex",
+						alignItems: "center",
+						width: "min-content",
+						fontSize: "12px",
+						color: "#454857",
+					}}
+				>
+					განბაჟება
+				</div>
+				<div
+					style={{
+						borderRadius: "100px",
+						backgroundColor: "#ffffff",
+						height: "32px",
+						padding: "12px",
+						display: "flex",
+						alignItems: "center",
+						width: "min-content",
+						fontSize: "12px",
+						color: "#454857",
+					}}
+				>
+					განბაჟება
+				</div>
 				<div
 					style={{
 						borderRadius: "100px",
