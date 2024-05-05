@@ -5,26 +5,18 @@ import Select from "@/components/Select/Select";
 export default function Home() {
 	return (
 		<>
-			<div
-				style={{
-					display: "flex",
-				}}
-			>
+			<div className="block lg:flex">
 				<Filter />
 
 				<div style={{ paddingLeft: "20px", paddingRight: "20px" }}>
-					<div
-						style={{
-							display: "flex",
-							justifyContent: "space-between",
-						}}
-					>
+					<div className="hidden lg:flex justify-between">
 						<div>176047 განცხადება</div>
 						<div style={{ display: "flex", gap: 8 }}>
 							<Select placeholder="ბოლო 3 საათი" width={140} />
 							<Select placeholder="თარიღი კლებადი" width={164} />
 						</div>
 					</div>
+
 					<Card />
 					<Card />
 					<Card />

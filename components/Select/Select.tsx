@@ -1,4 +1,4 @@
-import { ArrowIcon } from "../ui/icon/Icon";
+import { DropdownIcon } from "../ui/icon/Icon";
 
 interface SelectorProps {
 	label?: string;
@@ -32,7 +32,7 @@ export default function Select(props: SelectorProps) {
 						</span>
 
 						<span className=" absolute flex items-center justify-center w-[36px] h-[36px] right-[4px] xl:right-[8px] md:hover:bg-grey-100 p-[8px] rounded-full -translate-y-1/2 top-1/2">
-							<ArrowIcon />
+							<DropdownIcon />
 						</span>
 					</div>
 				</div>

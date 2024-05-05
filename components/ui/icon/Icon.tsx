@@ -113,7 +113,7 @@ export const MotoIcon = () => {
 	);
 };
 
-export const ArrowIcon = () => {
+export const DropdownIcon = () => {
 	return (
 		<svg
 			width="16"
@@ -330,6 +330,25 @@ export const Divider = () => {
 			xmlns="http://www.w3.org/2000/svg"
 		>
 			<rect width="250" height="1" fill="#E9E9F0" />
+		</svg>
+	);
+};
+
+export const BreadCrumbsArrowIcon = () => {
+	return (
+		<svg
+			width="11"
+			height="16"
+			viewBox="0 0 11 16"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				d="M4.2038 5L7.2038 8L4.2038 11"
+				stroke="#6F7383"
+				stroke-linecap="round"
+				stroke-linejoin="round"
+			/>
 		</svg>
 	);
 };

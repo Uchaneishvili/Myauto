@@ -8,14 +8,9 @@ const config: Config = {
 	],
 	theme: {
 		extend: {
-			borderRadius: {
-				"14": "14px",
-			},
-			width: {
-				"780": "780px",
-			},
-			height: {
-				"172": "172px",
+			colors: {
+				"custom-orange": "#FD4100",
+				"custom-gray": "#6F7383",
 			},
 		},
 	},
