@@ -64,12 +64,11 @@ export default function Filter() {
 						<Select placeholder="იყიდება" label="გარიგების ტიპი" />
 						<Select placeholder="იყიდება" label="გარიგების ტიპი" />
 					</div>
-
-					<Divider />
 				</div>
+				<hr />
 			</div>
 
-			<div className="flex gap-2 py-3 max-w-[415px] overflow-scroll lg:hidden md:max-w-[750px]">
+			<div className="flex gap-2 pl-[14px] py-3 max-w-[415px] overflow-scroll lg:hidden md:max-w-[750px]">
 				<div
 					style={{
 						borderRadius: "100px",

@@ -8,8 +8,6 @@ interface SelectorProps {
 }
 
 export default function Select(props: SelectorProps) {
-	console.log("p", props.placeholder);
-
 	return (
 		<div
 			style={{

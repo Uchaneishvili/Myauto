@@ -1,11 +1,12 @@
 import {
-	Divider,
+	CompareIcon,
 	DoneIcon,
 	FireIcon,
 	GearIcon,
 	GeoFlag,
 	LariIcon,
 	MotorIcon,
+	NoteIcon,
 	Oval,
 	SpeedIcon,
 	WheelIcon,
@@ -180,7 +181,13 @@ export default function Card() {
 					gap: 8,
 				}}
 			>
-				<div style={{ padding: "14px 16px" }}>
+				<div
+					style={{
+						paddingLeft: "14px",
+						paddingRight: "14px",
+						paddingTop: "16px",
+					}}
+				>
 					<div
 						style={{
 							fontSize: "14px",
@@ -315,21 +322,36 @@ export default function Card() {
 							</div>
 						</div>
 					</div>
-					<div style={{ width: "100%" }}>
-						<Divider />
-					</div>
-					<div
-						style={{
-							display: "flex",
-							alignItems: "center",
-							gap: 8,
-							fontSize: "11px",
-							color: "#8996AE",
-							paddingTop: "12px",
-							paddingBottom: "12px",
-						}}
-					>
-						<FireIcon /> 589 ნახვა <Oval /> 2 დღის წინ
+				</div>
+				<div style={{ width: "100%" }}>
+					<hr />
+				</div>
+				<div
+					style={{
+						paddingLeft: "14px",
+						paddingRight: "14px",
+						paddingBottom: "16px",
+					}}
+				>
+					<div style={{ display: "flex", justifyContent: "space-between" }}>
+						<div
+							style={{
+								display: "flex",
+								alignItems: "center",
+								gap: 8,
+								fontSize: "11px",
+								color: "#8996AE",
+								paddingTop: "12px",
+								paddingBottom: "12px",
+							}}
+						>
+							<FireIcon /> 589 ნახვა <Oval /> 2 დღის წინ
+						</div>
+
+						<div style={{ display: "flex", alignItems: "center" }}>
+							<CompareIcon />
+							<NoteIcon />
+						</div>
 					</div>
 				</div>
 			</div>
