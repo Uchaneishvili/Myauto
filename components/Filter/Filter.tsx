@@ -70,8 +70,8 @@ export default function Filter() {
 							}}
 						>
 							<Select placeholder="იყიდება" label="გარიგების ტიპი" />
-							<Select placeholder="იყიდება" label="გარიგების ტიპი" />
-							<Select placeholder="იყიდება" label="გარიგების ტიპი" />
+							<Select placeholder="ყველა მწარმოებელი" label="მწარმოებელი" />
+							<Select placeholder="ყველა კატეგორია" label="კატეგორია" />
 						</div>
 						<hr />
 						<div
