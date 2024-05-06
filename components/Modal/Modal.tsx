@@ -26,7 +26,8 @@ const Modal: React.FC<ModalProps> = ({ options, onClose, onClick }) => {
 	return (
 		<div
 			ref={modalRef}
-			className="bg-white absolute border border-gray-300 rounded-lg shadow-lg pt-[5px] pb-[5px] mt-[3px]"
+			className="bg-white absolute border border-gray-300 rounded-lg shadow-lg pt-[5px] pb-[5px] mt-[3px] shadow-[0_4px_20px_rgba(164, 174, 193, 0.4)]"
+			style={{}}
 		>
 			{options.map((option, index) => (
 				<div
