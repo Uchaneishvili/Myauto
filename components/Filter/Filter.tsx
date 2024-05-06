@@ -1,9 +1,18 @@
+"use client";
+import { useState } from "react";
 import Button from "../Button/Button";
 import PriceInput from "../PriceInput/PriceInput";
 import Select from "../Select/Select";
-import { CarIcon, Divider, MotoIcon, TractorIcon } from "../ui/icon/Icon";
+import { CarIcon, MotoIcon, TractorIcon } from "../ui/icon/Icon";
+
+enum IType {
+	CAR = 1,
+	TRACTOR = 2,
+	MOTO = 3,
+}
 
 export default function Filter() {
+	const [type, setType] = useState<IType>(1);
 	return (
 		<div>
 			<div className="hidden lg:block w-[250px] h-[452px]">
@@ -19,35 +28,26 @@ export default function Filter() {
 					}}
 				>
 					<div
-						style={{
-							width: "84px",
-							display: "flex",
-							alignItems: "center",
-							justifyContent: "center",
-						}}
+						className={`w-[84px] h-12 rounded-tl-[12px] flex items-center justify-center cursor-pointer ${
+							type === 1 ? "bg-white border-b border-[#FD4100]" : ""
+						}`}
+						onClick={() => setType(1)}
 					>
 						<CarIcon />
 					</div>
 					<div
-						style={{
-							width: "84px",
-							display: "flex",
-							alignItems: "center",
-							borderRight: "1px solid #E9E9F0",
-							borderLeft: "1px solid #E9E9F0",
-
-							justifyContent: "center",
-						}}
+						className={`w-[84px] h-12 flex items-center border-r border-b border-l border-[#E9E9F0] justify-center cursor-pointer ${
+							type === 2 ? "bg-white border-b-[#FD4100]" : ""
+						}`}
+						onClick={() => setType(2)}
 					>
 						<TractorIcon />
 					</div>
 					<div
-						style={{
-							width: "84px",
-							display: "flex",
-							alignItems: "center",
-							justifyContent: "center",
-						}}
+						className={`w-[84px] h-12 rounded-tr-[12px] flex items-center justify-center cursor-pointer ${
+							type === 3 ? "bg-white border-b border-[#FD4100]" : ""
+						}`}
+						onClick={() => setType(3)}
 					>
 						<MotoIcon />
 					</div>
