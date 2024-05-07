@@ -4,6 +4,7 @@ import Button from "../Button/Button";
 import PriceInput from "../PriceInput/PriceInput";
 import Select from "../Select/Select";
 import { CarIcon, MotoIcon, TractorIcon } from "../ui/icon/Icon";
+import { IOptions } from "@/Types/Options";
 
 enum IType {
 	CAR = 1,
@@ -13,6 +14,44 @@ enum IType {
 
 export default function Filter() {
 	const [type, setType] = useState<IType>(1);
+	const [manufacturer, setManufacturer] = useState<IOptions>({
+		label: "ყველა მწარმოებელი",
+		value: 0,
+	});
+	const [manufacturerModal, setManufacturerModal] = useState(false);
+	const [offerType, setOfferType] = useState<IOptions>({
+		label: "იყიდება",
+		value: 0,
+	});
+	const [offerTypeModal, setOfferTypeModal] = useState(false);
+	const [category, setCategory] = useState<IOptions>({
+		label: "ყველა კატეგორია",
+		value: 0,
+	});
+	const [categoryModal, setCategoryModal] = useState(false);
+
+	const manufacturerOptions = [
+		{ label: "ყველა მწარმოებელი", value: 0 },
+		{ label: "Lexus", value: 1 },
+		{ label: "BMW", value: 2 },
+		{ label: "Honda", value: 3 },
+		{ label: "Nissan", value: 4 },
+		{ label: "Volkswagen", value: 5 },
+	];
+
+	const offerTypeOptions = [
+		{ label: "იყიდება", value: 0 },
+		{ label: "ქირავდება", value: 1 },
+	];
+
+	const categoryOptions = [
+		{ label: "ყველა კატეგორია", value: 0 },
+		{ label: "ჯიპი", value: 1 },
+		{ label: "სედანი", value: 2 },
+		{ label: "კუპე", value: 3 },
+		{ label: "უნივერსალი", value: 4 },
+	];
+
 	return (
 		<div>
 			<div className="hidden lg:block w-[250px] h-[452px]">
@@ -69,10 +108,37 @@ export default function Filter() {
 								textAlign: "start",
 							}}
 						>
-							<Select placeholder="იყიდება" label="გარიგების ტიპი" />
-							<Select placeholder="ყველა მწარმოებელი" label="მწარმოებელი" />
-							<Select placeholder="ყველა კატეგორია" label="კატეგორია" />
+							<Select
+								label="გარიგების ტიპი"
+								value={offerType}
+								onSelect={setOfferType}
+								onClose={() => setOfferTypeModal(false)}
+								onClick={() => setOfferTypeModal(!offerTypeModal)}
+								state={offerTypeModal}
+								options={offerTypeOptions}
+							/>
+
+							<Select
+								label="მწარმოებელი"
+								value={manufacturer}
+								onSelect={setManufacturer}
+								onClose={() => setManufacturerModal(false)}
+								onClick={() => setManufacturerModal(!manufacturerModal)}
+								state={manufacturerModal}
+								options={manufacturerOptions}
+							/>
+
+							<Select
+								label="კატეგორია"
+								value={category}
+								onSelect={setCategory}
+								onClose={() => setCategoryModal(false)}
+								onClick={() => setCategoryModal(!categoryModal)}
+								state={categoryModal}
+								options={categoryOptions}
+							/>
 						</div>
+
 						<hr />
 						<div
 							style={{

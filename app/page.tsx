@@ -1,16 +1,22 @@
 "use client";
 
+import { IOptions } from "@/Types/Options";
 import Card from "@/components/Card/Card";
 import Filter from "@/components/Filter/Filter";
-import Modal from "@/components/Modal/Modal";
 import Select from "@/components/Select/Select";
 import { useState } from "react";
 
 export default function Home() {
 	const [sortModal, setSortModal] = useState(false);
 	const [filterModal, setFilterModal] = useState(false);
-	const [sortValue, setSortValue] = useState(0);
-	const [filterValue, setFilterValue] = useState(1);
+	const [sortValue, setSortValue] = useState<IOptions>({
+		label: "თარიღი კლებადი",
+		value: 0,
+	});
+	const [filterValue, setFilterValue] = useState<IOptions>({
+		label: "ბოლო 3 საათი",
+		value: 1,
+	});
 
 	const sortOptions = [
 		{ label: "თარიღი კლებადი", value: 0 },
@@ -29,41 +35,6 @@ export default function Home() {
 		{ label: "ბოლო 24 საათი", value: 4 },
 	];
 
-	const getFilterTitle = (val: number) => {
-		switch (val) {
-			case 0:
-				return "ბოლო 1 საათი";
-			case 1:
-				return "ბოლო 3 საათი";
-			case 2:
-				return "ბოლო 6 საათი";
-			case 3:
-				return "ბოლო 12 საათი";
-			case 4:
-				return "ბოლო 24 საათი";
-			default:
-				return "-";
-		}
-	};
-
-	const getSortTitle = (val: number) => {
-		switch (val) {
-			case 0:
-				return "თარიღი კლებადი";
-			case 1:
-				return "თარიღი ზრდადი";
-			case 2:
-				return "ფასი კლებადი";
-			case 3:
-				return "ფასი ზრდადი";
-			case 4:
-				return "გარბენი კლებადი";
-			case 5:
-				return "გარბენი ზრდადი";
-			default:
-				return "-";
-		}
-	};
 	return (
 		<>
 			<div className="block lg:flex">
@@ -75,36 +46,26 @@ export default function Home() {
 						<div style={{ display: "flex", gap: 8 }}>
 							<div style={{ width: "140px" }}>
 								<Select
-									placeholder={getFilterTitle(filterValue)}
 									width={140}
 									onClick={() => setFilterModal(!filterModal)}
-									value={sortValue}
+									value={filterValue}
+									onClose={() => setSortModal(false)}
+									onSelect={setFilterValue}
+									state={filterModal}
+									options={filterOptions}
 								/>
-
-								{filterModal && (
-									<Modal
-										options={filterOptions}
-										onClose={() => setFilterModal(false)}
-										onClick={setFilterValue}
-									/>
-								)}
 							</div>
 
-							<div>
+							<div style={{ width: "164px" }}>
 								<Select
-									placeholder={getSortTitle(sortValue)}
 									width={164}
 									onClick={() => setSortModal(!sortModal)}
-									value={filterValue}
+									value={sortValue}
+									onClose={() => setSortModal(false)}
+									onSelect={setSortValue}
+									state={sortModal}
+									options={sortOptions}
 								/>
-
-								{sortModal && (
-									<Modal
-										options={sortOptions}
-										onClose={() => setSortModal(false)}
-										onClick={(e: any) => setSortValue(e)}
-									/>
-								)}
 							</div>
 						</div>
 					</div>
