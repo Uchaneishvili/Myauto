@@ -35,7 +35,9 @@ export default function Select(props: SelectorProps) {
 	}, []);
 	return (
 		<div>
-			<div className={`w-${props.width} bg-[#ffffff] grid rowGap-8`}>
+			<div
+				className={`w-${props.width} bg-[#ffffff] grid rowGap-8 rounded-[8px]`}
+			>
 				{props.label && (
 					<label className="color-[#272A37] text-[12px]">{props.label}</label>
 				)}
@@ -63,7 +65,7 @@ export default function Select(props: SelectorProps) {
 					{props.options.map((option, index) => (
 						<div
 							onClick={() => {
-								console.log(option), props.onSelect(option);
+								props.onSelect(option);
 							}}
 							key={index}
 							className={`h-8 w-full flex p-[16px] text-[14px] items-center cursor-pointer hover:bg-[#F2F3F6] text-[#272A37]`}
