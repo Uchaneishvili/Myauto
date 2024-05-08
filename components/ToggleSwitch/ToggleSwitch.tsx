@@ -17,7 +17,7 @@ const ToggleSwitch = () => {
 				onClick={toggleSwitch}
 				type="button"
 			>
-				<div style={{ display: "flex", alignItems: "center" }}>
+				<div className="flex items-center">
 					<div className={"absolute left-[6px] z-10"}>
 						<LariToggleSwitch fill={isChecked ? "#8C929B" : "#ffffff"} />
 					</div>

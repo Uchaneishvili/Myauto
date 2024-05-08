@@ -43,8 +43,8 @@ export default function Home() {
 				<div className="lg:px-5">
 					<div className="hidden lg:flex justify-between">
 						<div>176047 განცხადება</div>
-						<div style={{ display: "flex", gap: 8 }}>
-							<div style={{ width: "140px" }}>
+						<div className="flex gap-[8px]">
+							<div className="w-[140px]">
 								<Select
 									width={140}
 									onClick={() => setFilterModal(!filterModal)}
@@ -56,7 +56,7 @@ export default function Home() {
 								/>
 							</div>
 
-							<div style={{ width: "164px" }}>
+							<div className="w-[164px]">
 								<Select
 									width={164}
 									onClick={() => setSortModal(!sortModal)}

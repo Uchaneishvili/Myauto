@@ -7,17 +7,10 @@ interface SelectorProps {
 export default function Input(props: SelectorProps) {
 	return (
 		<div
-			style={{
-				width: props.width,
-				backgroundColor: props.backgroundColor,
-				display: "grid",
-				rowGap: 8,
-			}}
+			className={`w-${props.width} bg-${props.backgroundColor} grid gap-y-[8px]`}
 		>
 			{props.label && (
-				<label style={{ color: "#272A37", fontSize: "12px" }}>
-					{props.label}
-				</label>
+				<label className="text-[#272A37] text-[#12px]">{props.label}</label>
 			)}
 			<div className="mt-[-1px] relative">
 				<div className=" bg-white relative w-full rounded-[8px] md:border transition-all cursor-pointer border-raisin-10 md:hover:border-raisin-100 ">

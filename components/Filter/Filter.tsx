@@ -55,17 +55,7 @@ export default function Filter() {
 	return (
 		<div>
 			<div className="hidden lg:block w-[250px] h-[452px]">
-				<div
-					style={{
-						height: "48px",
-						width: "100%",
-						display: "flex",
-						backgroundColor: "#F9F9FB",
-						borderRadius: "11px 11px 0 0",
-						border: "1px solid #E9E9F0",
-						borderBottom: 0,
-					}}
-				>
+				<div className="h-[48px] w-full flex bg-[#F9F9FB] rounded-t-[11px] border border-solid border-[#E9E9F0] border-b-0">
 					<div
 						className={`w-[84px] h-12 rounded-tl-[12px] flex items-center justify-center cursor-pointer ${
 							type === 1 ? "bg-white border-b border-[#FD4100]" : ""
@@ -91,23 +81,9 @@ export default function Filter() {
 						<MotoIcon />
 					</div>
 				</div>
-				<div
-					className="bg-white w-full flex flex-col justify-between"
-					style={{
-						height: "100%",
-						border: "1px solid #E9E9F0",
-						borderBottom: 0,
-					}}
-				>
+				<div className="bg-white w-full flex flex-col justify-between h-full border border-solid border-b-0 border-[#E9E9F0]">
 					<div>
-						<div
-							style={{
-								padding: "22px 24px",
-								rowGap: "20px",
-								display: "grid",
-								textAlign: "start",
-							}}
-						>
+						<div className="px-[22px] py-[24px] gap-y-[20px] grid text-start">
 							<Select
 								label="გარიგების ტიპი"
 								value={offerType}
@@ -140,194 +116,26 @@ export default function Filter() {
 						</div>
 
 						<hr />
-						<div
-							style={{
-								rowGap: "20px",
-								display: "grid",
-								textAlign: "start",
-							}}
-						>
+						<div className="gap-y-[20px] grid text-start">
 							<PriceInput />
 						</div>
 					</div>
 				</div>
-				<div
-					style={{
-						padding: "22px 24px",
-						backgroundColor: "#ffffff",
-						boxShadow: "0 2px 16px rgba(39, 42, 55, 0.13) ",
-						borderRight: "1px solid #E9E9F0",
-						borderLeft: "1px solid #E9E9F0",
-					}}
-				>
+				<div className="px-[22px] py-[24px] bg-[#ffffff] shadow-[0_2px_16px_rgba(39,42,55,0.13)] border-r border-l border-[#E9E9F0]">
 					<Button />
 				</div>
 			</div>
 			<div className="flex gap-2 pl-[14px] py-3 max-w-[415px] overflow-scroll lg:hidden md:max-w-[750px]">
-				<div
-					style={{
-						borderRadius: "100px",
-						backgroundColor: "#ffffff",
-						height: "32px",
-						padding: "12px",
-						display: "flex",
-						alignItems: "center",
-						width: "min-content",
-						fontSize: "12px",
-						color: "#454857",
-					}}
-				>
+				<div className="rounded-[100px] bg-[#ffffff] h-[32px] p-[12px] flex items-center whitespace-nowrap text-[12px] text-[#454857]">
 					განბაჟება
 				</div>
-				<div
-					style={{
-						borderRadius: "100px",
-						backgroundColor: "#ffffff",
-						height: "32px",
-						padding: "12px",
-						display: "flex",
-						alignItems: "center",
-						width: "min-content",
-						fontSize: "12px",
-						color: "#454857",
-					}}
-				>
+				<div className="rounded-[100px] bg-[#ffffff] h-[32px] p-[12px] flex items-center whitespace-nowrap text-[12px] text-[#454857]">
 					განბაჟება
 				</div>
-				<div
-					style={{
-						borderRadius: "100px",
-						backgroundColor: "#ffffff",
-						height: "32px",
-						padding: "12px",
-						display: "flex",
-						alignItems: "center",
-						width: "min-content",
-						fontSize: "12px",
-						color: "#454857",
-					}}
-				>
+				<div className="rounded-[100px] bg-[#ffffff] h-[32px] p-[12px] flex items-center whitespace-nowrap text-[12px] text-[#454857]">
 					განბაჟება
 				</div>
-				<div
-					style={{
-						borderRadius: "100px",
-						backgroundColor: "#ffffff",
-						height: "32px",
-						padding: "12px",
-						display: "flex",
-						alignItems: "center",
-						width: "min-content",
-						fontSize: "12px",
-						color: "#454857",
-					}}
-				>
-					განბაჟება
-				</div>
-				<div
-					style={{
-						borderRadius: "100px",
-						backgroundColor: "#ffffff",
-						height: "32px",
-						padding: "12px",
-						display: "flex",
-						alignItems: "center",
-						width: "min-content",
-						fontSize: "12px",
-						color: "#454857",
-					}}
-				>
-					განბაჟება
-				</div>
-				<div
-					style={{
-						borderRadius: "100px",
-						backgroundColor: "#ffffff",
-						height: "32px",
-						padding: "12px",
-						display: "flex",
-						alignItems: "center",
-						width: "min-content",
-						fontSize: "12px",
-						color: "#454857",
-					}}
-				>
-					იყიდება
-				</div>
-				<div
-					style={{
-						borderRadius: "100px",
-						backgroundColor: "#ffffff",
-						height: "32px",
-						padding: "12px",
-						display: "flex",
-						alignItems: "center",
-						width: "min-content",
-						fontSize: "12px",
-						color: "#454857",
-					}}
-				>
-					საქართველო
-				</div>
-				<div
-					style={{
-						borderRadius: "100px",
-						backgroundColor: "#ffffff",
-						height: "32px",
-						padding: "12px",
-						display: "flex",
-						alignItems: "center",
-						width: "min-content",
-						fontSize: "12px",
-						color: "#454857",
-					}}
-				>
-					2012
-				</div>
-				<div
-					style={{
-						borderRadius: "100px",
-						backgroundColor: "#ffffff",
-						height: "32px",
-						padding: "12px",
-						display: "flex",
-						alignItems: "center",
-						width: "min-content",
-						fontSize: "12px",
-						color: "#454857",
-					}}
-				>
-					განბაჟება
-				</div>
-				<div
-					style={{
-						borderRadius: "100px",
-						backgroundColor: "#ffffff",
-						height: "32px",
-						padding: "12px",
-						display: "flex",
-						alignItems: "center",
-						width: "min-content",
-						fontSize: "12px",
-						color: "#454857",
-					}}
-				>
-					განბაჟება
-				</div>
-
-				<div
-					style={{
-						borderRadius: "100px",
-						backgroundColor: "#ffffff",
-						height: "32px",
-						padding: "12px",
-						display: "flex",
-						alignItems: "center",
-						width: "min-content",
-						fontSize: "12px",
-						color: "#454857",
-					}}
-				>
+				<div className="rounded-[100px] bg-[#ffffff] h-[32px] p-[12px] flex items-center whitespace-nowrap text-[12px] text-[#454857]">
 					განბაჟება
 				</div>
 			</div>

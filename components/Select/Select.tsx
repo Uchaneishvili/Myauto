@@ -60,7 +60,6 @@ export default function Select(props: SelectorProps) {
 				<div
 					ref={modalRef}
 					className="z-10 w-[182px] bg-white absolute border border-gray-300 rounded-lg shadow-lg pt-[5px] pb-[5px] mt-[3px] shadow-[0_4px_20px_rgba(164, 174, 193, 0.4)]"
-					style={{}}
 				>
 					{props.options.map((option, index) => (
 						<div
